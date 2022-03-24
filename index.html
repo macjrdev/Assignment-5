@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h1 {margin-bottom: 30px;}
+        label {font-weight: bold;}
+        input, select {margin-bottom: 10px;}
+        form {width: 30%; padding: 20px;}
+    </style>
+</head>
+<body class="mt-2 ml-4 bg-secondary bg-gradient">
+    <main class="container">
+    <h1 class="text-center text-white">Employee Management System</h1>
+    <form id="empForm" class="bg-light bg-gradient">
+        <label for="id">8-Digit Employee ID</label>
+        <input type="text" name="id" id="id" maxlength="8" required>
+        <br>
+        <label for="name">Full name</label><br>
+        <input type="text" name="name" id="name" required>
+        <br>
+        <label for="ext">4-Digit Extension</label>
+        <input type="text" name="ext" id="ext" maxlength="4">
+        <br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="department">Department</label>
+        <select id="department" class="form-select" aria-label="Default select example">
+            <option selected>Click here to see options</option>
+            <option>Administrative</option>
+            <option>Engineering</option>
+            <option>Executive</option>
+            <option>Marketing</option>
+            <option>Quality Assurance</option>
+            <option>Sales</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" id="submit" value="Add Employee" class="btn btn-primary mb-3">
+
+    </form>
+</main>
+</body>
+</html>
